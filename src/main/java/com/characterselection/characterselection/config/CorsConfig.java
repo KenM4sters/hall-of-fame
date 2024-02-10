@@ -1,6 +1,7 @@
 package com.characterselection.characterselection.config;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
@@ -13,6 +14,7 @@ import static org.springframework.http.HttpHeaders.ACCESS_CONTROL_ALLOW_CREDENTI
 import static org.springframework.http.HttpMethod.*;
 import static org.springframework.http.HttpMethod.OPTIONS;
 
+@Configuration
 public class CorsConfig {
     @Bean
     public CorsFilter corsFilter() {
